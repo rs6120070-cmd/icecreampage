@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Delight - Your Favorite Ice Cream Brand</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .product-card {
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-buy {
+            background-color: #ff6b6b;
+            border: none;
+            color: white;
+        }
+        .btn-buy:hover {
+            background-color: #ff5252;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Ice Cream Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#premium">Premium Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Ice Cream Delight</h1>
+            <p class="lead">Indulge in the creamiest, most delicious ice creams made with love and natural ingredients.</p>
+            <a href="#product" class="btn btn-primary btn-lg">Explore Our Flavors</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>At Ice Cream Delight, we believe in creating joyful moments with every scoop. Founded in 2020, our brand uses only the finest ingredients to craft artisanal ice creams that melt in your mouth. From classic vanilla to exotic tropical blends, we're committed to quality and sustainability.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1525451167239-264fb77ad20f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=nick-karvounis-7sf0vmckvz4-unsplash.jpg&w=1920" alt="Ice Cream Shop" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1650419741906-1cdead9c9b4f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=summer-time-3qLJHi0b4O8-unsplash.jpg" class="card-img-top" alt="Vanilla Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Vanilla</h5>
+                            <p class="card-text">Smooth and creamy vanilla ice cream made with real vanilla beans.</p>
+                            <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1729462043494-dda667c69fc5?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Chocolate Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Rich Chocolate</h5>
+                            <p class="card-text">Decadent chocolate ice cream with chunks of dark chocolate.</p>
+                            <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1532678465554-94846274c297?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Strawberry Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Delight</h5>
+                            <p class="card-text">Fresh strawberry ice cream bursting with fruity flavor.</p>
+                            <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Product Section -->
+    <section id="premium" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Premium Products</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card product-card">
+                        <img src="https://www.si.com/.image/t_share/MTY4MTkwNzU4Nzg3MTY0MDMz/816-gold-ice-cream-in-dubai.jpg" class="card-img-top" alt="Gold Dusted Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Dusted Luxury</h5>
+                            <p class="card-text">Exquisite ice cream dusted with edible gold for a premium experience.</p>
+                            <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card product-card">
+                        <img src="https://tamil.channeliam.com/wp-content/uploads/2023/06/Rene_most_expensive_ice_cream_in_the_world_5d1f38c0-2492-4e81-9da3-6b6fc6719382.jpg" class="card-img-top" alt="Truffle Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Byakuya Luxuary</h5>
+                            <p class="card-text">Byakuya-flavored ice cream with sake less and edible gold leaf.</p>
+                            <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Get in Touch</h4>
+                    <p>Email: info@icecreamdelight.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Ice Cream Lane, Flavor Town, USA</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ice Cream Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Buy Modal -->
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyModalLabel">Buy Ice Cream</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="flavor" class="form-label">Select Flavor</label>
+                            <select class="form-select" id="flavor" required>
+                                <option value="">Choose...</option>
+                                <option value="vanilla">Vanilla</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="strawberry">Strawberry</option>
+                                <option value="gold">Gold Dusted</option>
+                                <option value="truffle">Truffle</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Confirm Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
