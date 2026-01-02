@@ -55,6 +55,12 @@
             padding: 20px 0;
             text-align: center;
         }
+        .page-section{
+            min-height: 100vh;
+            padding-top: 90px;
+            scroll-margin-top: 90px;
+            
+        }
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -102,7 +108,7 @@
         });
     </script>
     <!-- Home Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero page-section">
         <div class="container">
             <h1>Welcome to Ice Cream Delight</h1>
             <p class="lead">Indulge in the creamiest, most delicious ice creams made with love and natural ingredients.</p>
@@ -111,7 +117,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section bg-light">
+    <section id="about" class="section bg-light page-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -126,7 +132,7 @@
     </section>
 
     <!-- Product Section -->
-    <section id="product" class="section">
+    <section id="product" class="section page-section">
         <div class="container">
             <h2 class="text-center mb-5">Our Products</h2>
             <div class="row">
@@ -165,7 +171,7 @@
     </section>
 
     <!-- Premium Product Section -->
-    <section id="premium" class="section bg-light">
+    <section id="premium" class="section bg-light page-section">
         <div class="container">
             <h2 class="text-center mb-5">Premium Products</h2>
             <div class="row">
@@ -194,7 +200,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section page-section">
         <div class="container">
             <h2 class="text-center mb-5">Contact Us</h2>
             <div class="row">
@@ -233,7 +239,7 @@
     </footer>
 
     <!-- Buy Modal -->
-    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal fade page-section" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -268,4 +274,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
